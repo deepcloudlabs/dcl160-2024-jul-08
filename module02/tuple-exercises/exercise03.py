@@ -1,0 +1,7 @@
+jack = ("jack", "bauer", 100_000, "tr1", ["IT", "Sales"])
+print(jack[0])
+jack[0].upper()
+print(jack[0])
+print(jack[4])
+jack[4].append("Finance")
+print(jack[4])

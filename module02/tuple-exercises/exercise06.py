@@ -1,0 +1,12 @@
+odds = (1, 3, 5, 7, 9)
+evens = (0, 2, 4, 6, 8)
+numbers = (*odds, *evens)  # packing
+print(numbers[0])
+print(numbers[1])
+print(numbers[2])
+print(numbers[3])
+print(numbers[4])
+print(numbers[5])
+print(numbers[6])
+numbers = sorted(numbers)
+print(numbers)
