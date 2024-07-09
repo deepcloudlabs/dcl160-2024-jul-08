@@ -1,8 +1,8 @@
 numbers = [4, 8, 15, 16, 23, 42]
 print(numbers)
+numbers.append(108)
 numbers.append(15)
 numbers.append(8)
-numbers.append(108)
 numbers.append(15)
 numbers.append(23)
 numbers.append(15)
