@@ -97,13 +97,19 @@ def play(state: dict, guess: int) -> dict:
     return state
 
 
+def print_game(state: dict) -> None:
+    print(f"Level: {state['level']}")
+    print(f"Live: {state['live']}")
+    print(f"Moves: {state['moves']}")
+
+
 def mastermind_app():
     global game_state
     print(game_state)
     while game_state["level"] < 10:
         guess = int(input("Enter guess: ").strip())
         game_state = play(game_state, guess)
-        print(game_state)
+        print_game(game_state)
 
 
 mastermind_app()
