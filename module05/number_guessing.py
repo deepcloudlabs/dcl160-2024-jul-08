@@ -9,7 +9,7 @@
 import random
 
 
-def create_secret(min_value: int = 1, max_value: int = 100) -> int:
+def create_secret(min_value: int = 1, max_value: int = 100) -> int: # no side effect
     return random.randint(min_value, max_value)
 
 
@@ -22,13 +22,13 @@ state = {
 state["secret"] = create_secret(1, 100)
 
 
-def create_move(guess: int, secret: int) -> tuple[int, str]:
+def create_move(guess: int, secret: int) -> tuple[int, str]: # no side effect
     if guess < secret:
         return guess, "Pick a larger number"
     return guess, "Pick a smaller number"
 
 
-def print_state(state):
+def print_state(state):  # no side effect
     for move in state["moves"]:
         print(move)
 
