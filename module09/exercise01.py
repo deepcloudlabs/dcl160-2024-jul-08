@@ -6,6 +6,6 @@ tc kimlik no,phone,license plate -> language
 regular expression -> parser -> language
 word ∈ language ?
 validation, parsing
-I.  . * + ? {} [] ()
+I.  . * + ? {} [] () | ^ $
 II. re
 """
